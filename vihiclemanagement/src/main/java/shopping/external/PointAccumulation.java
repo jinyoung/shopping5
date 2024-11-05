@@ -1,11 +1,23 @@
 package shopping.external;
 
-import java.util.Date;
-import lombok.Data;
-
-@Data
 public class PointAccumulation {
 
     private String name;
-    private Object points;
+    private Money points;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Money getPoints() {
+        return points;
+    }
+
+    public void setPoints(Money points) {
+        this.points = points;
+    }
 }

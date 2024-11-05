@@ -1,0 +1,60 @@
+
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="shopping.mapper.VehicleMapper">
+    <select id="findList" resultType="vehicle">
+        SELECT 
+            차종,
+
+            연식,
+
+            배기량,
+
+            maintenanceHistories
+        FROM vehicle
+    </select>
+    
+    
+    <select id="findOneById" parameterType="long" resultType="vehicle">
+        SELECT 
+            차종,
+
+            연식,
+
+            배기량,
+
+            maintenanceHistories
+        FROM vehicle
+        WHERE id = #{id}
+    </select>
+    
+    <insert id="save" parameterType="vehicle" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO vehicle (
+                        연식,
+                        배기량,
+                        maintenanceHistories
+            ) 
+        VALUES (
+                        #{ 연식 },
+                        #{ 배기량 },
+                        #{ maintenanceHistories }
+            )
+    </insert>
+    
+    <update id="update" parameterType="vehicle">
+        UPDATE reservation
+        SET 
+
+            연식 = #{ 연식 },
+
+            배기량 = #{ 배기량 },
+
+            maintenanceHistories = #{ maintenanceHistories }
+        WHERE id = #{id}
+    </update>
+    
+    <delete id = "deleteById" parameterType="long">
+        DELETE FROM vehicle WHERE id = #{id}
+    </delete>
+</mapper>

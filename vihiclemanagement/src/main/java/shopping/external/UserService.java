@@ -7,10 +7,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-//<<< Resilency / Circuit Breaker
-@FeignClient(name = "usermgmt", url = "${api.url.usermgmt}")
+@FeignClient(name = "usermgmt", url = "http://usermgmt:8080")
 public interface UserService {
     @RequestMapping(method = RequestMethod.POST, path = "/users")
     public void createUser(@RequestBody User user);
 }
-//>>> Resilency / Circuit Breaker
