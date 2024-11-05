@@ -69,6 +69,7 @@
                     { text: "name", value: "name" },
                     { text: "email", value: "email" },
                     { text: "password", value: "password" },
+                    { text: "주소", value: "주소" },
                 ],
             user : [],
             newValue: {},
@@ -89,6 +90,7 @@
                 'name': '',
                 'email': '',
                 'password': '',
+                '주소': '',
             }
         },
         methods: {

@@ -19,7 +19,6 @@
             <Value Object Type offline label="차종" v-model="value.차종" :editMode="editMode" @change="change"/>
             <Value Object Type offline label="연식" v-model="value.연식" :editMode="editMode" @change="change"/>
             <Value Object Type offline label="배기량" v-model="value.배기량" :editMode="editMode" @change="change"/>
-            <List&lt;&gt; offline label="MaintenanceHistories" v-model="value.maintenanceHistories" :editMode="editMode" @change="change"/>
             <Manager offline label="MaintenanceHistories" v-model="value.maintenanceHistories" :editMode="editMode" @change="change"/>
         </v-card-text>
 

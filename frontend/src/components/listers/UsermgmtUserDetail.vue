@@ -10,6 +10,9 @@
             </div>
             <Email offline label="Email" v-model="item.email" :editMode="false" @change="change" />
             <Password offline label="Password" v-model="item.password" :editMode="false" :key="false" @change="change" />
+            <div>
+                <String label="주소" v-model="item.주소" :editMode="editMode" @change="change" />
+            </div>
         </v-card-text>
 
         <v-card-actions>

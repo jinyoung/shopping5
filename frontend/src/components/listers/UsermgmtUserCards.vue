@@ -113,6 +113,7 @@
                 'name': '',
                 'email': '',
                 'password': '',
+                '주소': '',
             }
         },
         methods:{

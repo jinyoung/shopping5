@@ -38,7 +38,7 @@ mvn spring-boot:run
 ```
 - usermgmt
 ```
- http :8088/users name="name" email="email" password="password" 
+ http :8088/users name="name" email="email" password="password" 주소="주소" 
 ```
 - point
 ```

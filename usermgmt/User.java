@@ -9,6 +9,9 @@ public class User {
     String name;
     Email email;
     Password password;
+    String 주소;
+
+    void UpdateUser() {}
 
     public static void main(String args[]) {
         SpringApplication.run(User.class, args);

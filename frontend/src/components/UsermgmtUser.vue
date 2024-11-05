@@ -19,6 +19,7 @@
             <String v-if="editMode" label="이름" v-model="value.name" :editMode="editMode" :inputUI="'TEXT'"/>
             <Email offline label="이메일" v-model="value.email" :editMode="editMode" @change="change"/>
             <Password offline label="비밀번호" v-model="value.password" :editMode="editMode" @change="change"/>
+            <String label="주소" v-model="value.주소" :editMode="editMode" :inputUI="''"/>
         </v-card-text>
 
         <v-card-actions>
